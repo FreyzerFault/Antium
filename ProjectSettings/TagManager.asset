@@ -5,6 +5,17 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ant
+  - UI Controller
+  - Nest
+  - ViewSpotLight
+  - WorldGenerator
+  - WorldBorder
+  - Food
+  - Wall
+  - Explorer
+  - Minion
+  - Wanderer
+  - MenuToggle
   layers:
   - Default
   - TransparentFX
@@ -15,18 +26,18 @@ TagManager:
   - 
   - 
   - 
+  - Walls
+  - 
+  - ViewRadius
+  - 
+  - Ant
+  - 
+  - Food
+  - 
+  - Nest
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
   - 
   - 
   - 
@@ -50,6 +61,12 @@ TagManager:
     locked: 0
   - name: Dark Foreground
     uniqueID: 3445304463
+    locked: 0
+  - name: SpotLightAnt
+    uniqueID: 1002395391
+    locked: 0
+  - name: SpotLightNest
+    uniqueID: 1805780859
     locked: 0
   - name: Foreground
     uniqueID: 3074669425
