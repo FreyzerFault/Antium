@@ -7,6 +7,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 805861658464398847, guid: d2c85c1b14ad7ed4cad9615c3f6d2140, type: 3}
+      propertyPath: m_fontSize
+      value: 21.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3175001347666288087, guid: d2c85c1b14ad7ed4cad9615c3f6d2140, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3175001347666288087, guid: d2c85c1b14ad7ed4cad9615c3f6d2140, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3175001347666288087, guid: d2c85c1b14ad7ed4cad9615c3f6d2140, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3175001347666288087, guid: d2c85c1b14ad7ed4cad9615c3f6d2140, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3175001347666288087, guid: d2c85c1b14ad7ed4cad9615c3f6d2140, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4427604783244440814, guid: d2c85c1b14ad7ed4cad9615c3f6d2140, type: 3}
       propertyPath: animator
       value: 
