@@ -6,7 +6,7 @@ Tema: "De 0 a 100"
 
 Subtema: "Rejugabilidad"
 
-[Itch.io](https://freyzerfault.itch.io/antium)https://freyzerfault.itch.io/antium
+[Itch.io](https://freyzerfault.itch.io/antium)
 
 Antonieta es la última reina de las hormigas.
 Su linaje depende de tu habilidad para ayudarle a encontrar a sus hijitos perdidos para que le ayuden a reconstruir el hormiguero.
