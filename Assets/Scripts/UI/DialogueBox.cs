@@ -10,9 +10,9 @@ public class DialogueBox : MonoBehaviour
     public TMP_Text textUI;
     public Animator animator;
     
-    public List<String> dialogue = new List<string>();
-    public List<int> fontSizes = new List<int>();
-    public int index = 0;
+    public List<String> dialogue = new();
+    public List<int> fontSizes = new();
+    public int index;
 
     public bool finished = false;
     private static readonly int ShowID = Animator.StringToHash("Show");

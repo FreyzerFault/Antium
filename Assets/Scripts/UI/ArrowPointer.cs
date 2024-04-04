@@ -8,6 +8,8 @@ public class ArrowPointer : MonoBehaviour
     public Transform target;
     public float radius = 10;
 
+    public bool fixIcon = true;
+
     private void Awake()
     {
         icon = transform.GetChild(0);
@@ -23,7 +25,8 @@ public class ArrowPointer : MonoBehaviour
         }
         
         // ICON sin rotar
-        icon.transform.rotation = Quaternion.identity;
+        if (fixIcon)
+            icon.transform.rotation = Quaternion.identity;
     }
 
 }
