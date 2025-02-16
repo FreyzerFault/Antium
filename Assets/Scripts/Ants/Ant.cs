@@ -1,7 +1,12 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
+
+#if UNITY_EDITOR
+    using UnityEditor;
+#endif
 
 public class Ant : MonoBehaviour
 {
@@ -76,7 +81,7 @@ public class Ant : MonoBehaviour
             Mathf.Clamp01(Speed));
         
         // POSITION update
-        rb.velocity = body.transform.up * Speed;
+        rb.linearVelocity = body.transform.up * Speed;
         rb.angularVelocity = 0;
         //transform.position += body.transform.up * (Time.deltaTime * Speed);
     }
@@ -257,9 +262,11 @@ public class Ant : MonoBehaviour
     }
 
     #endregion
-
-
+    
+    
     #region GIZMO
+    
+    #if UNITY_EDITOR
     
     protected void OnDrawGizmos()
     {
@@ -273,7 +280,12 @@ public class Ant : MonoBehaviour
         // Speed
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + direction * Speed);
+        
+        Handles.color = Color.cyan;
+        Handles.DrawWireDisc(transform.position, Vector3.back, viewRadius);
     }
+    
+    #endif
 
     #endregion
 }

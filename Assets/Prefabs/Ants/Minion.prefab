@@ -5,6 +5,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 8013108657124009, guid: 9f3a02fef5affa947be6b183ba1928c7, type: 3}
@@ -487,6 +488,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0.098
       objectReference: {fileID: 0}
+    - target: {fileID: 8121366383134874087, guid: 9f3a02fef5affa947be6b183ba1928c7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8613285648652806649, guid: 9f3a02fef5affa947be6b183ba1928c7, type: 3}
       propertyPath: m_Color.b
       value: 0.09411765
@@ -498,6 +503,14 @@ PrefabInstance:
     - target: {fileID: 8613285648652806649, guid: 9f3a02fef5affa947be6b183ba1928c7, type: 3}
       propertyPath: m_Color.r
       value: 0.09411765
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739786411454424490, guid: 9f3a02fef5affa947be6b183ba1928c7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739786411454424490, guid: 9f3a02fef5affa947be6b183ba1928c7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.38268346
       objectReference: {fileID: 0}
     - target: {fileID: 8856797864689663821, guid: 9f3a02fef5affa947be6b183ba1928c7, type: 3}
       propertyPath: m_Enabled
@@ -531,6 +544,12 @@ PrefabInstance:
     - {fileID: 6162395434967589081, guid: 9f3a02fef5affa947be6b183ba1928c7, type: 3}
     - {fileID: 8856797864689663821, guid: 9f3a02fef5affa947be6b183ba1928c7, type: 3}
     - {fileID: 2807716903528635664, guid: 9f3a02fef5affa947be6b183ba1928c7, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4522416204127633131, guid: 9f3a02fef5affa947be6b183ba1928c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7724798639340046613}
   m_SourcePrefab: {fileID: 100100000, guid: 9f3a02fef5affa947be6b183ba1928c7, type: 3}
 --- !u!95 &3011065031771667562 stripped
 Animator:
@@ -560,9 +579,9 @@ MonoBehaviour:
   rotationSpeed: 10
   maxHeadAngle: 20
   CarryFood: 0
-  Speed: 0
-  targetSpeed: 0
-  targetRotation: {x: 0, y: 0, z: 0, w: 1}
+  Speed: 35.35534
+  targetSpeed: 35.35534
+  targetRotation: {x: -0, y: 0, z: -0.38268346, w: 0.92387956}
   targetPosition: {x: 0, y: 0, z: 0}
   foodGrabPos: {fileID: 3785159684253563546}
   foodTarget: {fileID: 0}

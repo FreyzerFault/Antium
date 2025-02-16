@@ -15,7 +15,7 @@ public class AntWanderer : Ant
     {
         base.Awake();
         
-        playerAnt = FindObjectOfType<AntController>();
+        playerAnt = FindFirstObjectByType<AntController>();
 
         StartCoroutine(Wander());
     }
@@ -28,7 +28,7 @@ public class AntWanderer : Ant
         {
             targetSpeed = 0;
             targetRotation = Quaternion.identity;
-            rb.velocity = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
             rb.angularVelocity = 0;
             Speed = maxSpeed / 2;
             return;

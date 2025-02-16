@@ -15,7 +15,8 @@ public class WorldGenerator : MonoBehaviour
     public FoodGenerator foodGenerator;
     public AntsGenerator antGenerator;
 
-    public GameObject worldBorder;
+    public LineRenderer worldBorder;
+    public SpriteRenderer ground;
     
     private GameObject player;
     
@@ -51,14 +52,14 @@ public class WorldGenerator : MonoBehaviour
     
     private void Start()
     {
-        if (generateWorldOnStartup){
-            Clear();
-            SetupBorder();
-            SetupRegions();
-            SpawnPlayer();
-            SpawnAll();
-            StartCoroutine(RespawnRoutine(respawnTime));
-        }
+        if (!generateWorldOnStartup) return;
+        
+        Clear();
+        SetupBorder();
+        SetupRegions();
+        SpawnPlayer();
+        SpawnAll();
+        StartCoroutine(RespawnRoutine(respawnTime));
     }
 
 
@@ -110,9 +111,22 @@ public class WorldGenerator : MonoBehaviour
     #region SETUP
 
     // WORLD BORDER
-    public void SetupBorder() => worldBorder.transform.localScale = WorldSize / 2;
+    public void SetupBorder()
+    {
+        float w = WorldSize.x / 2, h = WorldSize.y / 2;
+        var borderPositions3D = new Vector3[] { new (w, h, 0), new (-w, h, 0), new (-w, -h, 0), new(w, -h, 0) };
+        var borderPositions2D = new Vector2[] { new (w, h), new (-w, h), new (-w, -h), new(w, -h), new (w, h) };
+        worldBorder.SetPositions(borderPositions3D);
+        worldBorder.loop = true;
 
-    
+        var edgeC = worldBorder.GetComponent<EdgeCollider2D>();
+        edgeC.edgeRadius = worldBorder.widthMultiplier / 2;
+        edgeC.points = borderPositions2D;
+
+        ground.size = WorldSize;
+    }
+
+
     // Spawn Player in center of World
     public void SpawnPlayer()
     {
